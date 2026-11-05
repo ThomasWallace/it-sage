@@ -4,11 +4,38 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML5 Cheatsheet</title>
+    <style>
+input, label, textarea{
+    display: block;
+}
+    </style>
 </head>
 <body>
     <header class="primary">
         <h1>HTML5 Cheatsheet</h1>
     </header>
+  <section id="quote">
+    <h2>Quotes</h2>
+    <h3>Blockquote</h3>
+    <blockquote>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error expedita asperiores cum doloremque eaque doloribus, in ipsam exercitationem magni eos! Corporis libero deleniti, magnam excepturi nesciunt voluptatum soluta unde, eius animi accusamus quam, atque saepe optio? Dignissimos, <cite>Author and Origin</cite>.</blockquote>
+    <h3>Inline Quote</h3>
+    <q>Lorem ipsum dolor sit amet</q> consectetur adipisicing elit. Vero, inventore similique mollitia est nisi labore quisquam culpa nostrum ipsam nobis!
+  </section>
+  <section id="images">
+    <img src="assets/img/cats.jpg" alt="Kittens Running through field" />
+  </section>
+  
+      <section id="text-elements">
+        <h2>Text Elements</h2>
+        <p>Lorem ipsum dolor sit <em>amet consectetur</em> adipisicing elit. <strong>Eius culpa provident</strong>, voluptas obcaecati <del>animi molestiae</del>, in magni assumenda <mark>explicabo fugit</mark> sit placeat odio? Ipsam sapiente, quasi soluta blanditiis est hic eos quod nesciunt esse optio, nihil repellat iusto ratione corrupti adipisci, a beatae itaque quia nemo qui <sub>quisquam!</sub> Deleniti, <sup>aperiam.</sup></p>
+        <hr />
+        <address>
+          Thomas Wallace</br>
+          123 Street Name</br>
+          Little Rcok, AR, 555555
+        </address>
+        <hr />
+    </section>
     <section id="headings">
         <h1>Heading 1</h1>
         <h2>Heading 2</h2>
@@ -17,10 +44,58 @@
         <h5>Heading 5</h5>
         <h6>Heading 6</h6>
     </section>
-    <section id="text-elements">
-        <h2>Text Elements</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum error, aliquam ut asperiores architecto deleniti minus, velit aut nobis eum deserunt necessitatibus accusamus explicabo id, ipsam ipsum fugit temporibus accusantium dolor soluta illo a? Accusamus dicta hic illo. Voluptas illum nostrum repudiandae est veritatis fugit labore, maxime beatae accusamus corrupti!</p>
+    <section id="forms">
+      <form action="processing-script.php" method="get">
+        <fieldset>
+            <legend>Sample Form Elements</legend>
+            <label for="fullname">Full Name:</label>
+            <input type="text" id="fullname" name="fullname" />
+            <label for="address">Address:</label>
+            <textarea id="address" name="address"></textarea>
+          <label for="color">Favorite Color:</label>
+            <select id="color" name="color">
+              <option value="R">Red</option>
+              <option value="G">Green</option>
+              <option value="B">Blue</option>
+              <option value="-" selected>Choose Color...</option>
+            </select>
+          <input type="submit" value="Take me to your leader"/>
+        </fieldset>
+      </form>
     </section>
+    <section id="table">
+        <h2>Table</h2>
+        <!-- Remove Border Attribute once you have added CSS -->
+        <table border="1">
+            <caption>Grocery List</caption>
+            <tr>
+                <th scope="col">Item</th>
+                <th scope="col">Quantity</th>
+                <th scope="col">Cost</th>
+            </tr>
+            <tr>
+                <td>Jolt</td>
+                <td>6</td>
+                <td>.99</td>
+            </tr>
+            <tr>
+                <td>Jolt</td>
+                <td>6</td>
+                <td>.99</td>
+            </tr>            
+            <tr>
+                <td>Jolt</td>
+                <td>6</td>
+                <td>.99</td>
+            </tr>            
+            <tr>
+                <td>Jolt</td>
+                <td>6</td>
+                <td>.99</td>
+            </tr>
+        </table>
+    </section>
+
     <section id="lists">
         <h2>Lists</h2>
         <h3>Unordered List</h3>
@@ -69,6 +144,7 @@
             <li><a href="mailto:email@email.com">Email Link</a></li>
         </ul>
     </section>
+    
 
 
 
